@@ -1,20 +1,19 @@
 #onLoadBody {
     background-color: rgb(197, 219, 238);
-    margin-left: 10%;   
+    margin-left: 10%;  
 
-    background: linear-gradient(350deg, rgb(192, 216, 237), rgb(175, 206, 233), rgb(159, 196, 229), rgb(143, 186, 224), rgb(127, 177, 220),
-    rgb(111, 167, 216), rgb(95, 157, 211), rgb(79, 147, 207), rgb(63, 137, 202), rgb(53, 127, 192),rgb(48, 116, 176),
-    rgb(44, 106, 160), rgb(39, 95, 144), rgb(35, 85, 128), rgb(31, 74, 112), rgb(26, 64, 96), rgb(22, 54, 80),
-    rgb(18, 43, 64), rgb(13, 32, 48), rgb(9, 22, 32),rgb(4, 11, 16));
+    background: linear-gradient(350deg,  rgb(254, 222, 274), rgb(192, 216, 237), rgb(127, 177, 220),
+    rgb(111, 167, 216),  rgb(79, 147, 207), rgb(53, 127, 192),rgb(44, 106, 160), rgb(39, 95, 144), rgb(35, 85, 128),
+    rgb(31, 74, 112), rgb(26, 64, 96), rgb(22, 54, 80), rgb(18, 43, 64), rgb(13, 32, 48), rgb(9, 22, 32),rgb(4, 11, 16));
       background-size: 1000% 1000%;
-      animation: gradient 20s ease infinite;
+      animation: gradient 25s ease infinite;
     }
 
 /*text*/
     h1{
         font-family: 'IBM Plex Sans', sans-serif;
         text-align: center;
-        text-decoration: none;
+        text-decoration: none; 
         font-weight: bold;
         font-size: 40px;
         overflow: hidden;
@@ -123,15 +122,15 @@
   
   @keyframes shake {
     10%,90% {
-      transform: translate3d(-.6px, 0, 0);
+      transform: translate3d(-1px, -.2px, 0);
     }
     20%,80% {
-      transform: translate3d(.6px, 0, 0);
+      transform: translate3d(1.7px, .2px, 0);
     }
     30%, 50%, 70% {
-      transform: translate3d(-.7px, 0, 0);
+      transform: translate3d(-.9px, -.1px, 0);
     }
     40%,60% {
-      transform: translate3d(.7px, 0, 0);
+      transform: translate3d(1.2px, .1px, 0);
     }
   }
