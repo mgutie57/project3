@@ -113,13 +113,14 @@ function noteOn(note){
         }
         //off triangle class
         if (note == 60){
-            //colorKeys (65, 0);
+            colorKeys (60, 84);
             clearAll();
         }  
 
     //reload random
     if (note == 36){  
         onClick();
+        colorKeys(36, 84);
         }
 
     //rectangl glass
@@ -166,7 +167,7 @@ function noteOn(note){
         }
         //off
         if (note == 52){
-            //colorKeys (65, 0);
+            colorKeys (52, 84);
             clearAll();
         } 
 
@@ -180,6 +181,15 @@ function noteOff(note){
 
     if (note == 36){
         randomLoad();
+        colorKeys(36, 0);
     }
+
+    if (note == 60){
+        colorKeys (60, 0);
+    } 
+
+    if (note == 52){
+        colorKeys (52, 0);
+    } 
 
 }
