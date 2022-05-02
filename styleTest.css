@@ -1,0 +1,137 @@
+#onLoadBody {
+    background-color: rgb(197, 219, 238);
+    margin-left: 10%;   
+
+    background: linear-gradient(350deg, rgb(192, 216, 237), rgb(175, 206, 233), rgb(159, 196, 229), rgb(143, 186, 224), rgb(127, 177, 220),
+    rgb(111, 167, 216), rgb(95, 157, 211), rgb(79, 147, 207), rgb(63, 137, 202), rgb(53, 127, 192),rgb(48, 116, 176),
+    rgb(44, 106, 160), rgb(39, 95, 144), rgb(35, 85, 128), rgb(31, 74, 112), rgb(26, 64, 96), rgb(22, 54, 80),
+    rgb(18, 43, 64), rgb(13, 32, 48), rgb(9, 22, 32),rgb(4, 11, 16));
+      background-size: 1000% 1000%;
+      animation: gradient 20s ease infinite;
+    }
+
+/*text*/
+    h1{
+        font-family: 'IBM Plex Sans', sans-serif;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 40px;
+        overflow: hidden;
+        margin-top: 5%;
+        
+    }
+    h2{
+        font-family: 'IBM Plex Sans', sans-serif;
+        color: rgb(110, 153, 180);
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 5%; 
+    }
+
+    h3{
+        font-family: 'IBM Plex Sans', sans-serif;
+        color: rgb(83, 151, 191);
+        text-align: center;
+        font-weight: bold;
+        font-size: 10px;
+        margin-left: -10%; 
+      
+    }
+
+    b {
+        font-family: 'IBM Plex Sans', sans-serif;
+        color: rgb(110, 153, 180); 
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    
+    /*detailed text decor*/
+    #names, #ingredients{
+        font-family: 'Cantarell', sans-serif;
+        color: rgb(110, 153, 180);
+        font-size: 15px;
+        text-align: center;
+        margin-top: 1%;
+        margin-left: -10%;
+    }
+
+    
+
+    /* fade text */
+
+    #fadeout {
+        opacity: 1;
+        transition: 1s opacity;
+        text-align: center;
+        font-size:32px;
+    }
+
+
+
+/*buttons + hover */
+    .button{
+        border: none;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Raleway', serif;
+        font-size: 25px; 
+        transition-duration: 0.4s;
+        cursor: pointer;
+        margin-left: 28%;
+        background-color: rgba(132, 164, 234, 0);
+        color: rgb(83, 151, 191);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+       
+    }
+
+
+/*------------------------------------------------------------*/
+  
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+/*------------------------------------------------------------*/
+
+.shake {
+    animation: shake 0.82s cubic-bezier(.36, .07, .9, .97) both infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 10px;
+  
+  }
+  
+  @keyframes shake {
+    10%,90% {
+      transform: translate3d(-.6px, 0, 0);
+    }
+    20%,80% {
+      transform: translate3d(.6px, 0, 0);
+    }
+    30%, 50%, 70% {
+      transform: translate3d(-.7px, 0, 0);
+    }
+    40%,60% {
+      transform: translate3d(.7px, 0, 0);
+    }
+  }
